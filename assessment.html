@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>역량 진단 | Future6</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body data-page="assessment">
+  <div id="site-header"></div>
+  <main class="assessment-main">
+    <section id="assessment-intro" class="assessment-intro">
+      <div class="container narrow">
+        <div class="assessment-welcome reveal">
+          <span class="eyebrow">FUTURE6 ASSESSMENT</span><h1>미래인재 역량진단</h1>
+          <p>최근 6개월 동안의 실제 행동을 떠올리며 가장 가까운 응답을 선택해 주세요.</p>
+          <div class="assessment-facts"><div><strong>72</strong><span>전체 문항</span></div><div><strong>약 10분</strong><span>예상 시간</span></div><div><strong>5점</strong><span>응답 척도</span></div></div>
+          <div class="notice-box"><b>응답 전 확인하세요</b><ul><li>바람직해 보이는 모습보다 실제 나의 행동을 기준으로 답합니다.</li><li>너무 오래 고민하지 말고 처음 떠오르는 응답을 선택합니다.</li><li>모든 문항에 응답해야 정확한 결과를 확인할 수 있습니다.</li></ul></div>
+          <div class="name-field"><label for="participant-name">결과표에 표시할 이름 <span>(선택)</span></label><input id="participant-name" type="text" maxlength="20" placeholder="이름 또는 닉네임"></div>
+          <button id="start-assessment" class="btn btn-primary btn-lg full">진단 시작하기 →</button>
+        </div>
+      </div>
+    </section>
+    <section id="assessment-test" class="test-shell hidden">
+      <div class="test-progress-wrap"><div class="container"><div class="progress-meta"><span id="progress-domain">창의성</span><b><span id="current-number">1</span> / 72</b></div><div class="progress-track"><span id="progress-bar"></span></div></div></div>
+      <div class="container test-container">
+        <div class="question-card">
+          <div id="question-domain" class="question-domain"></div>
+          <span id="question-number" class="question-no">QUESTION 01</span>
+          <h2 id="question-text"></h2>
+          <div id="answer-options" class="answer-options"></div>
+          <div class="question-nav"><button id="prev-question" class="btn btn-soft" type="button">← 이전</button><button id="next-question" class="btn btn-dark" type="button" disabled>다음 →</button></div>
+        </div>
+        <p class="autosave-note">응답 내용은 이 브라우저에 자동 저장됩니다.</p>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script><script src="js/common.js"></script><script src="js/assessment.js"></script>
+</body>
+</html>

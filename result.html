@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진단 결과 | Future6</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body data-page="result">
+  <div id="site-header"></div>
+  <main id="result-main" class="result-main">
+    <section class="result-hero">
+      <div class="container">
+        <div class="result-title reveal"><span class="eyebrow light">MY FUTURE6 REPORT</span><h1><span id="result-name">나</span>의 미래역량 리포트</h1><p id="result-date"></p></div>
+        <div class="result-summary-grid">
+          <div class="result-radar-card reveal"><canvas id="radar-chart" width="560" height="480" aria-label="6대 역량 레이더 차트"></canvas></div>
+          <div class="result-score-card reveal delay-1"><span>종합 역량지수</span><strong id="total-score">0</strong><div id="total-level" class="big-level">-</div><p id="total-comment"></p><div class="percentile-note">점수는 자기인식에 기반한 현재 행동 수준을 의미합니다.</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section result-section">
+      <div class="container">
+        <div class="section-head split"><div><span class="eyebrow">COMPETENCY SCORES</span><h2>6대 역량 분석</h2></div><button class="btn btn-soft no-print" onclick="window.print()">결과 인쇄하기</button></div>
+        <div id="score-bars" class="score-bars"></div>
+      </div>
+    </section>
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="insight-grid"><article class="insight-card strength"><span>TOP STRENGTH</span><h2 id="strength-title"></h2><p id="strength-copy"></p></article><article class="insight-card growth"><span>GROWTH PRIORITY</span><h2 id="growth-title"></h2><p id="growth-copy"></p></article></div>
+        <div class="section-head result-subhead"><span class="eyebrow">DETAILED ANALYSIS</span><h2>하위요인 상세 분석</h2></div>
+        <div id="subfactor-grid" class="subfactor-grid"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container"><div class="section-head"><span class="eyebrow">ACTION GUIDE</span><h2>나를 성장시키는 3가지 행동</h2><p>가장 먼저 개발할 역량을 기준으로 추천한 작은 실천입니다.</p></div><div id="action-grid" class="action-grid"></div></div>
+    </section>
+    <section class="section compact-top no-print"><div class="container"><div class="result-actions"><a class="btn btn-primary btn-lg" href="assessment.html?restart=1">다시 진단하기</a><a class="btn btn-soft btn-lg" href="guide.html">결과 활용법 보기</a></div></div></section>
+  </main>
+  <div id="empty-result" class="empty-state hidden"><div><span>REPORT NOT FOUND</span><h1>아직 완료된 진단이 없습니다.</h1><p>72개 문항에 응답하면 나만의 미래역량 리포트가 생성됩니다.</p><a class="btn btn-primary btn-lg" href="assessment.html">진단 시작하기 →</a></div></div>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script><script src="js/common.js"></script><script src="js/result.js"></script>
+</body>
+</html>
